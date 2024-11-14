@@ -57,10 +57,8 @@ Do these steps to ensure you'll be ready to go when the workshop starts:
 2. Run `npx expo install expo-dev-client`
 3. Run `npx expo run:ios`
 
-## Other resources
-
-TBD
-
 ## Connect
-- [Linked In](https://www.linkedin.com/in/keith-kurak/)
+- [Bluesky](https://bsky.app/profile/keith.bsky.social)
+- [LinkedIn](https://www.linkedin.com/in/keith-kurak/)
+- [X](https://x.com/llamaluvr)
 - [Expo Discord](https://chat.expo.dev)
