@@ -9,10 +9,23 @@ export const useFavStatusMutation = function () {
   const query = useMutation({
     mutationFn: async (favStatus: { workId: string; status: boolean }) => {
       const { workId, status } = favStatus;
-      return false;
+      const response = await fetch(`/api/works/${workId}/fav`, {
+        method: "POST",
+        headers: {
+          Accept: "application.json",
+          "Content-Type": "application/json",
+          authToken,
+        },
+        cache: "default",
+        body: JSON.stringify({ status }),
+      });
+      return await response.json();
     },
-    onSuccess: (data: any, variables: any) => {
-      queryClient.setQueryData([`works:fav:${variables.id}`], variables.status);
+    onSuccess: (data, variables) => {
+      queryClient.setQueryData(
+        [`works:fav:${variables.workId}`],
+        variables.status
+      );
       queryClient.invalidateQueries({ queryKey: ["favs"] });
     },
   });
