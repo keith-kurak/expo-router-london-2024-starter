@@ -20,10 +20,10 @@ export default function TabLayout() {
         "shadow-sm sm:shadow-none" // yum, shadows!
       )}
     >
-      <TabTrigger name="index" href="/" asChild>
+      <TabTrigger name="index" href="/(home)" asChild>
         <TabButton icon="museum">Home</TabButton>
       </TabTrigger>
-      <TabTrigger name="exhibits" asChild href="/exhibits" reset="always">
+      <TabTrigger name="exhibits" asChild href="/(exhibits)" reset="always">
         <TabButton icon="palette">Exhibits</TabButton>
       </TabTrigger>
       <TabTrigger name="visit" asChild href="/visit">

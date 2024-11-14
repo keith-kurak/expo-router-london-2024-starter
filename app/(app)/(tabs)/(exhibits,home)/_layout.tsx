@@ -3,8 +3,10 @@ import { Stack } from "expo-router";
 import colors from "@/constants/colors";
 
 export const unstable_settings = {
-  // Ensure any route can link back to `/`
   initialRouteName: "index",
+  exhibits: {
+    initialRouteName: "exhibits/index",
+  },
 };
 
 export default function StackLayout() {
@@ -14,6 +16,12 @@ export default function StackLayout() {
         name="index"
         options={{
           title: "Exhibits",
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="exhibits/index"
+        options={{
           headerShown: false,
         }}
       />
