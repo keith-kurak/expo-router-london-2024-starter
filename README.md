@@ -15,7 +15,7 @@ Workshop starter template for the Expo Router workshop at React Native London Co
 - Web browser
 
 > [!NOTE]
-> We're working on the cutting edge on this workshop - SDK 52. We anticipate it will be fully-live just before the workshop, but for now, if you test this out before the workshop, you'll have to download the SDK 52 Expo Go beta through the Expo CLI [instrutions](https://expo.dev/changelog/2024/10-24-sdk-52-beta#how-to-try-out-the-beta-release) for use with Android or iOS simulators. If you want to run it on your iOS device before the new version is ready, you can make a development build (see below). Of course, we'll be ready to help you out in the workshop, and even if you have issues getting things working on a device, rest assured that practically all exercises can be completed in a web browser.
+> ~~We're working on the cutting edge on this workshop - SDK 52. We anticipate it will be fully-live just before the workshop, but for now, if you test this out before the workshop, you'll have to download the SDK 52 Expo Go beta through the Expo CLI [instrutions](https://expo.dev/changelog/2024/10-24-sdk-52-beta#how-to-try-out-the-beta-release) for use with Android or iOS simulators. If you want to run it on your iOS device before the new version is ready, you can make a development build (see below). Of course, we'll be ready to help you out in the workshop, and even if you have issues getting things working on a device, rest assured that practically all exercises can be completed in a web browser.~~ Nevermind! SDK 52 is LIVE! Just download Expo Go from the Play Store or App Store.
 
 You actually don't need a Mac for this workshop. You don't need to do any native builds for the main workshop exercises (maybe useful for 1 or 2 side quests)
 
