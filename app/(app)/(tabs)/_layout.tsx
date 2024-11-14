@@ -10,6 +10,7 @@ export default function TabLayout() {
       screenOptions={{
         sceneStyle: { backgroundColor: colors.white },
         headerShown: false,
+        lazy: false,
       }}
     >
       <Tabs.Screen
@@ -28,6 +29,15 @@ export default function TabLayout() {
           title: "Exhibits",
           tabBarIcon: ({ color }) => (
             <TabBarIcon type="MaterialIcons" name="palette" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="visit"
+        options={{
+          title: "Visit",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon type="MaterialIcons" name="map" color={color} />
           ),
         }}
       />

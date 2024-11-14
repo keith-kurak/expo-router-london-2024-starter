@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
 import React from "react";
+import { Platform } from "react-native";
 import colors from "@/constants/colors";
 
 export {
@@ -22,6 +23,21 @@ export default function Layout() {
         options={{
           headerShown: false,
           contentStyle: { backgroundColor: colors.white },
+        }}
+      />
+      <Stack.Screen
+        name="works/[workId]"
+        options={{
+          ...Platform.select({
+            web: {
+              presentation: "transparentModal",
+              animation: "fade",
+            },
+            default: {
+              presentation: "modal",
+            },
+          }),
+          headerShown: false,
         }}
       />
     </Stack>
