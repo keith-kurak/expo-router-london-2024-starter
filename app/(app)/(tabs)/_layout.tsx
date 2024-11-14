@@ -7,8 +7,8 @@ import { TabBarIcon } from "@/components/TabBarIcon";
 export default function TabLayout() {
   return (
     <Tabs
-      sceneContainerStyle={{ backgroundColor: colors.white }}
       screenOptions={{
+        sceneStyle: { backgroundColor: colors.white },
         headerShown: false,
         lazy: false,
       }}
